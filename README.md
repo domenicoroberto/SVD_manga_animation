@@ -57,7 +57,7 @@ sh linux_setup.sh
 
 ## :label: TODO List
 
-- [ ] More conditional to animation(WIP)
+- [ ] More conditioning for UNet (WIP)
 
 
 ## :hearts: Acknowledgement
@@ -66,15 +66,4 @@ This project builds upon [Diffusers](https://github.com/huggingface/diffusers) a
 
 We also acknowledge the research contributions from [FrameWarpNet](https://arxiv.org/abs/2402.01566) and [StyleGAN](https://github.com/NVlabs/stylegan3).
 
-## :black_nib: Citation
 
-If you find our work helpful, please cite the following BibTeX entry.    
-
-```bibtex
-@article{manga2024animation,
-  title={Manga Animation Enhancement via Diffusion Models},
-  author={Your Name and Collaborators},
-  journal={arXiv preprint arXiv:2403.XXXX},
-  year={2024}
-}
-```
