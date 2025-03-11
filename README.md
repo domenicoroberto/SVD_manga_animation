@@ -34,7 +34,7 @@ self.base_folder
 ### Training Configuration
 This configuration is a reference setup, where all `unet` parameters are trainable, and we use a learning rate of `1e-5`.
 ```bash
-accelerate launch train_manga.py \
+accelerate launch train_svd_lora.py \
     --pretrained_model_name_or_path=/path/to/weight \
     --per_gpu_batch_size=1 --gradient_accumulation_steps=1 \
     --max_train_steps=50000 \
