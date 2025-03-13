@@ -1,6 +1,5 @@
 import os
 import cv2
-import numpy as np
 
 
 def generate_video_from_frames(frame_folder, output_video, fps=7, frame_skip=1):
