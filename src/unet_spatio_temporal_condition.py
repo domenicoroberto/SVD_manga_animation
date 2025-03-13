@@ -98,6 +98,9 @@ class UNetSpatioTemporalConditionModel(ModelMixin, ConfigMixin, UNet2DConditionL
 
         self.sample_size = sample_size
 
+        # TODO: questo check con l'if sono da rimuovere, puoi usare assert per fare controlli
+        # ES: assert(len(down_block_types) == len(up_block_types), "Must provide the same number of `down_block_types` as `up_block_types`.")
+        
         # Check inputs
         if len(down_block_types) != len(up_block_types):
             raise ValueError(
@@ -125,12 +128,7 @@ class UNetSpatioTemporalConditionModel(ModelMixin, ConfigMixin, UNet2DConditionL
             )
 
         # input
-        self.conv_in = nn.Conv2d(
-            in_channels,
-            block_out_channels[0],
-            kernel_size=3,
-            padding=1,
-        )
+        self.conv_in = nn.Conv2d(in_channels, block_out_channels[0], kernel_size=3, padding=1)
 
         # time
         time_embed_dim = block_out_channels[0] * 4
