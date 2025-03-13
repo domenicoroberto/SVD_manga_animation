@@ -181,3 +181,5 @@ wandb
 outputs
 *.txt
 
+# data
+dataset_manga
